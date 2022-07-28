@@ -1,0 +1,38 @@
+.root {
+    --primary-text-color: #757575;
+    --sec-text-color: #212121;
+    --bg-color: #FFFFFF;
+    --feaures-color: #F5F5F5;
+    --team-bg-color: #F5F4FA;
+    --accent-color: #2196F3;
+    --hero-color: #2F303A;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page {
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+}
+
+.logo {
+    color: var(--accent-color);
+}
+
+.nav-logo {
+    color: #000000;
+}
+
+.hero {
+    background-color: var(--hero-color);
+}
+
+.h3-title {
+    color: var(--sec-text-color);
+}
+
+.address-logo {
+    color: var(--bg-color);
+}
