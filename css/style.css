@@ -1,15 +1,10 @@
-.root {
+:root {
     --primary-text-color: #757575;
     --sec-text-color: #212121;
     --bg-color: #FFFFFF;
-    --feaures-color: #F5F5F5;
     --team-bg-color: #F5F4FA;
     --accent-color: #2196F3;
-    --hero-color: #2F303A;
-}
-
-a {
-    text-decoration: none;
+    --sec-bg-color: #2F303A;
 }
 
 .page {
@@ -17,22 +12,96 @@ a {
     color: var(--primary-text-color);
 }
 
-.logo {
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--sec-text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Шапка */
+
+.link.logo {
     color: var(--accent-color);
 }
 
-.nav-logo {
+.nav.logo {
     color: #000000;
 }
 
-.hero {
-    background-color: var(--hero-color);
+.nav.link {
+    color: var(--sec-text-color);
 }
 
+.nav.link a:hover,
+.nav.link a:focus {
+    color: var(--accent-color);
+}
+
+.active.link {
+    color: var(--accent-color);
+}
+
+.contact.link a {
+    color: var(--primary-text-color);
+}
+
+.contact.link a:hover,
+.contact.link a:focus {
+    color: var(--accent-color);
+}
+
+.link:hover {
+    color: var(--accent-color);
+}
+
+/* Секція Герой */
+
+.hero {
+    background-color: var(--sec-bg-color);
+    color: var(--bg-color);
+}
+
+.hero button {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+.h2-title,
 .h3-title {
     color: var(--sec-text-color);
 }
 
-.address-logo {
+/* Команда */
+
+.team {
+    background-color: var(--team-bg-color);
+}
+
+/* Футер */
+
+.footer {
+    background-color: var(--sec-bg-color);
+}
+
+.address.logo {
     color: var(--bg-color);
+}
+
+.address a{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.map.link{
+    color: var(--bg-color);
+}
+
+.address.link a:hover,
+.address.link a:focus {
+    color: var(--accent-color);
 }
