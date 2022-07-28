@@ -49,8 +49,6 @@ ul {
 .nav.link a {
   color: var(--sec-text-color);
 
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -69,8 +67,6 @@ ul {
 .contact.link a {
   color: var(--primary-text-color);
 
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -92,7 +88,6 @@ ul {
   background-color: var(--sec-bg-color);
   color: var(--bg-color);
 
-  font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -105,7 +100,6 @@ ul {
   background-color: var(--accent-color);
   color: var(--bg-color);
 
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -119,7 +113,6 @@ ul {
 }
 
 .h2-title {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -128,7 +121,6 @@ ul {
 }
 
 .h3-title {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -140,7 +132,6 @@ ul {
 }
 
 .features p {
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -154,7 +145,6 @@ ul {
 }
 
 .team h3 {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -163,7 +153,6 @@ ul {
 }
 
 .team p {
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -178,7 +167,6 @@ ul {
 }
 
 address {
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -205,10 +193,11 @@ address {
 /* Портфоліо */
 
 button {
+  cursor: pointer;
+
   background-color: var(--team-bg-color);
   color: var(--sec-text-color);
 
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -224,7 +213,6 @@ button:hover {
 .works .h2-title {
   color: var(--sec-bg-color);
 
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -235,7 +223,6 @@ button:hover {
 .works p {
   color: var(--primary-text-color);
 
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
