@@ -121,7 +121,7 @@ ul {
 
 .contact.link svg {
   margin-right: 10px;
-  --color1: currentColor;
+  --color2: currentColor;
 }
 
 .nav.link li:last-child a,
@@ -145,7 +145,6 @@ ul {
 .nav.link a:hover,
 .nav.link a:focus {
   color: var(--accent-color);
-  --color1: var(--accent-color);
 }
 
 .nav .active.link {
@@ -372,7 +371,7 @@ ul {
 }
 
 .team-list .social-list svg {
-  --color2: currentColor;
+  --color1: currentColor;
 }
 
 /* Клієнти */
@@ -414,8 +413,8 @@ ul {
   border-color: var(--accent-color);
 }
 
-.our-clients svg {
-  --color2: currentColor;
+.clients-list svg {
+  --color1: currentColor;
 }
 
 /* Футер */
@@ -508,8 +507,8 @@ address {
   background-color: var(--accent-color);
 }
 
-.social-list svg {
-  --color2: var(--bg-color);
+.join-in .social-list svg {
+  --color1: var(--bg-color);
 }
 
 /* Портфоліо */
