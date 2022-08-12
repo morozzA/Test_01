@@ -599,6 +599,7 @@ footer .h3-title {
   transition: border-color 250ms var(--cubic);
 }
 
+.subscribe input:hover,
 .subscribe input:focus {
   outline: 1px solid var(--accent-color);
   border-color: var(--accent-color);
@@ -892,14 +893,16 @@ footer .h3-title {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: outline 250ms var(--cubic), --color3 250ms var(--cubic);
+  transition: border 250ms var(--cubic), --color3 250ms var(--cubic);
 }
 
 .input:hover,
 .input:focus,
 .comment:hover,
 .comment:focus {
-  outline: 1px solid var(--accent-color);
+  /* outline: 1px solid var(--accent-color); */
+  outline: 0;
+  border: 1px solid var(--accent-color);
 }
 
 .input:hover + svg,
@@ -916,6 +919,8 @@ footer .h3-title {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border 250ms var(--cubic);
 }
 
 .comment:placeholder-shown {
@@ -957,7 +962,7 @@ footer .h3-title {
   /* background-image: url(../images/icon-check.svg); */
   /* background-origin: border-box; */
   /* background-size: contain; */
-  border: 0;
+  border: 2px solid var(--accent-color);
   background-color: var(--accent-color);
 }
 
