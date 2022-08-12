@@ -419,8 +419,8 @@ ul {
   border-radius: 50%;
 }
 
-.team-list .social-list div:hover,
-.social-list li a:focus div {
+.social-list div:hover,
+.social-list > li > a:focus div {
   color: var(--bg-color);
   background-color: var(--accent-color);
 }
