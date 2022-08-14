@@ -9,15 +9,30 @@
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.page {
-  background-color: var(--bg-color);
-  color: var(--primary-text-color);
-
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 0.03em;
-  margin-left: auto;
-  margin-right: auto;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* a:visited {
+  color: var(--sec-text-color);
+} */
 
 .visually-hidden {
   position: absolute;
@@ -33,35 +48,19 @@
   overflow: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+.page {
+  background-color: var(--bg-color);
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
-p {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:visited {
-  color: var(--sec-text-color);
-}
-
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  border-bottom: 1px solid #ececec;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .container {
@@ -72,118 +71,108 @@ header {
   margin-right: auto;
 }
 
-header .container {
+/* Header */
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__container {
   display: flex;
   align-items: center;
 }
 
-ul {
-  list-style: none;
-}
+/* Logo */
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-/* Шапка */
-
-.link.logo {
-  color: var(--accent-color);
-
+.logo {
   font-family: 'Railway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  margin-right: 93px;
+  color: var(--accent-color);
 }
 
-.nav-logo {
+.logo__append {
   color: #000000;
 }
 
-.nav.link,
-.contact.link {
+/* Nav */
+
+.nav {
+  margin-left: 93px;
+}
+
+.nav__list,
+.contact-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.nav.link a,
-.contact.link a {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin-right: 50px;
-}
-
-.contact.link a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact.link svg {
-  margin-right: 10px;
-  --color2: currentColor;
-}
-
-.nav.link li:last-child a,
-.contact.link li:last-child a {
-  margin-right: 0;
-}
-
-.contact.link {
-  margin-left: auto;
-}
-
-.nav.link a {
-  color: var(--sec-text-color);
-
+.nav__link {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--sec-text-color);
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic);
 }
 
-.nav.link a:hover,
-.nav.link a:focus {
-  color: var(--accent-color);
-}
-
-.nav.link a {
-  position: relative;
-}
-
-.nav .active.link::after {
+.nav__link--active::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: -2px;
-
-  width: calc(100% + 4px);
+  left: 0;
+  width: 100%;
+  /* left: -2px; */
+  /* width: calc(100% + 4px); */
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
 }
 
-.contact.link a {
-  color: var(--primary-text-color);
+.contact-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.nav__link,
+.contact-list__link {
+  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav__item:last-child .nav__link,
+.contact-list__item:last-child .contact-list__link {
+  margin-right: 0;
+}
+
+.contact-list {
+  margin-left: auto;
+}
+
+.contact-list__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic);
 }
 
-.contact.link a:hover,
-.contact.link a:focus {
+.contact-list__logo {
+  margin-right: 10px;
+  --color2: currentColor;
+}
+
+.nav__link:hover,
+.nav__link:focus,
+.contact-list__link:hover,
+.contact-list__link:focus {
   color: var(--accent-color);
 }
 
