@@ -1,0 +1,32 @@
+.social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.social-list__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  color: $primary-text-color;
+  border-radius: 50%;
+
+  transition: color 250ms $cubic, background-color 250ms $cubic;
+}
+
+.social-list__link {
+  border-radius: 50%;
+}
+
+.social-list__circle:hover,
+.social-list__link:focus .social-list__circle {
+  color: $bg-color;
+  background-color: $accent-color;
+}
+
+.social-list__logo {
+  --color1: currentColor;
+}

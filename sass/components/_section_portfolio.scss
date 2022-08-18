@@ -1,0 +1,128 @@
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
+.works__filter {
+  margin-bottom: 50px;
+}
+
+.filter__item {
+  margin-right: 8px;
+}
+
+.filter__item:last-child {
+  margin-right: 0;
+}
+
+.filter__btn {
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $sec-text-color;
+  background-color: $team-bg-color;
+  border: 0;
+  border-radius: 4px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: $cubic;
+}
+
+.filter__btn:hover,
+.filter__btn:focus {
+  color: $bg-color;
+  background-color: $accent-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Наші роботи */
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.works-list__link {
+  display: block;
+
+  width: 370px;
+
+  transition: box-shadow 250ms $cubic;
+}
+
+.works-list__link:hover,
+.works-list__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.works-list__img-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.works-list__img {
+  display: block;
+}
+
+.works-list__overlay {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  padding: 20px 24px;
+  transform: translateY(100%);
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transition: transform 250ms $cubic;
+}
+
+.works-list__desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: $bg-color;
+}
+
+.works-list__link:hover .works-list__overlay,
+.works-list__link:focus .works-list__overlay {
+  transform: translateY(0);
+}
+
+.works-list__meta {
+  padding: 20px 24px;
+
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+
+.works-list__h2 {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: $sec-bg-color;
+}
+
+.works-list__type {
+  line-height: 1.88;
+  color: $primary-text-color;
+}

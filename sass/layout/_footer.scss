@@ -1,0 +1,77 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $sec-bg-color;
+}
+
+.page-footer__container {
+  display: flex;
+}
+
+/* Контакти */
+
+.contacts__logo {
+  color: $bg-color;
+}
+
+/* Адреса */
+
+.address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.contacts__address {
+  margin-top: 20px;
+}
+
+.address__item {
+  margin-bottom: 9px;
+}
+
+.address__item:last-child {
+  margin: 0;
+}
+
+.address__link {
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms $cubic;
+}
+
+.address__link--white {
+  color: $bg-color;
+}
+
+.address__link:hover,
+.address__link:focus {
+  color: $accent-color;
+}
+
+/* Приєднуйтесь */
+
+.page-footer__join-in {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+
+.join-in__h3 {
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+}
+
+.join-in__social-list .social-list__circle {
+  color: $bg-color;
+}
+
+.page-footer__subscribe {
+  margin-top: 12px;
+  margin-left: 93px;
+}
+
+.page-footer__h3 {
+  color: $bg-color;
+}

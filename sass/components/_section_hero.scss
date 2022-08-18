@@ -1,0 +1,31 @@
+.hero {
+  padding: 0;
+
+  color: $bg-color;
+}
+
+.hero__img {
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 1600px;
+  height: 600px;
+
+  background-color: $sec-bg-color;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__container {
+  padding: 200px 252px;
+}
+
+.hero__button {
+  display: block;
+  margin: 30px auto 0 auto;
+
+  padding: 10px 32px;
+}

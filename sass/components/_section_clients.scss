@@ -1,0 +1,28 @@
+.clients__list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients__link {
+  display: block;
+
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+
+  color: $primary-text-color;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition: color 250ms $cubic, border-color 250ms $cubic;
+}
+
+.clients__logo {
+  --color1: currentColor;
+}
+
+.clients__link:hover,
+.clients__link:focus {
+  color: $accent-color;
+  border-color: $accent-color;
+}

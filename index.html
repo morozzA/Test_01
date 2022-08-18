@@ -11,11 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/main.min.css" rel="stylesheet" />
   </head>
   <body class="page">
     <header class="page-header">
@@ -410,46 +406,48 @@
         </div>
       </section>
       <section class="clients">
-        <h2 class="h2">Постійні клієнти</h2>
-        <ul class="clients__list">
-          <li class="clients__item">
-            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="clients__link">
-              <svg width="106" height="60" class="clients__logo">
-                <use href="./images/icons.svg#client01"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="clients__link">
-              <svg width="106" height="60" class="clients__logo">
-                <use href="./images/icons.svg#client02"></use></svg
-            ></a>
-          </li>
-          <li class="clients__item">
-            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="clients__link">
-              <svg width="106" height="60" class="clients__logo">
-                <use href="./images/icons.svg#client03"></use></svg
-            ></a>
-          </li>
-          <li class="clients__item">
-            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="clients__link">
-              <svg width="106" height="60" class="clients__logo">
-                <use href="./images/icons.svg#client04"></use></svg
-            ></a>
-          </li>
-          <li class="clients__item">
-            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="clients__link">
-              <svg width="106" height="60" class="clients__logo">
-                <use href="./images/icons.svg#client05"></use></svg
-            ></a>
-          </li>
-          <li class="clients__item">
-            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="clients__link">
-              <svg width="106" height="60" class="clients__logo">
-                <use href="./images/icons.svg#client06"></use></svg
-            ></a>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="h2">Постійні клієнти</h2>
+          <ul class="clients__list">
+            <li class="clients__item">
+              <a href="" target="_blank" rel="noopener noreferrer nofollow" class="clients__link">
+                <svg width="106" height="60" class="clients__logo">
+                  <use href="./images/icons.svg#client01"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="" target="_blank" rel="noopener noreferrer nofollow" class="clients__link">
+                <svg width="106" height="60" class="clients__logo">
+                  <use href="./images/icons.svg#client02"></use></svg
+              ></a>
+            </li>
+            <li class="clients__item">
+              <a href="" target="_blank" rel="noopener noreferrer nofollow" class="clients__link">
+                <svg width="106" height="60" class="clients__logo">
+                  <use href="./images/icons.svg#client03"></use></svg
+              ></a>
+            </li>
+            <li class="clients__item">
+              <a href="" target="_blank" rel="noopener noreferrer nofollow" class="clients__link">
+                <svg width="106" height="60" class="clients__logo">
+                  <use href="./images/icons.svg#client04"></use></svg
+              ></a>
+            </li>
+            <li class="clients__item">
+              <a href="" target="_blank" rel="noopener noreferrer nofollow" class="clients__link">
+                <svg width="106" height="60" class="clients__logo">
+                  <use href="./images/icons.svg#client05"></use></svg
+              ></a>
+            </li>
+            <li class="clients__item">
+              <a href="" target="_blank" rel="noopener noreferrer nofollow" class="clients__link">
+                <svg width="106" height="60" class="clients__logo">
+                  <use href="./images/icons.svg#client06"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
@@ -481,7 +479,7 @@
           </address>
         </div>
         <div class="join-in page-footer__join-in">
-          <h3 class="h3 join-in__h3">Приєднуйтесь</h3>
+          <h3 class="h3 join-in__h3 page-footer__h3">Приєднуйтесь</h3>
           <ul class="social-list join-in__social-list">
             <li class="social-list__item">
               <a
@@ -534,7 +532,7 @@
           </ul>
         </div>
         <div class="subscribe page-footer__subscribe">
-          <h3 class="h3 subscribe__h3">Підпишіться на розсилку</h3>
+          <h3 class="h3 subscribe__h3 page-footer__h3">Підпишіться на розсилку</h3>
           <form autocomplete="off" class="subscribe__form">
             <label>
               <input type="email" name="email" placeholder="E-mail" class="subscribe__input" />
@@ -581,7 +579,7 @@
             </svg>
           </label>
           <p class="contact-form__label-name">Коментар</p>
-          <label class="contact-form__label">
+          <label class="contact-form__area">
             <textarea
               name="comment"
               class="contact-form__comment"
