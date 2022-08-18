@@ -763,7 +763,7 @@ section {
 
 .btn-close:hover .btn-close__logo,
 .btn-close:focus .btn-close__logo {
-  --color5: $accent-color;
+  -\-color5: #2196f3;
 }
 
 .contact-form {
@@ -840,7 +840,7 @@ section {
 
 .contact-form__input:hover + .contact-form__logo,
 .contact-form__input:focus + .contact-form__logo {
-  --color3: $accent-color;
+  -\-color3: #2196f3;
 }
 
 .block-checkbox {
