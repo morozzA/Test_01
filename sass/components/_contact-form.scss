@@ -57,13 +57,14 @@
   transition: border 250ms $cubic;
 }
 
-.contact-form__comment:placeholder-shown {
+.contact-form__comment::placeholder {
   margin-bottom: 0;
 
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .contact-form__button {
