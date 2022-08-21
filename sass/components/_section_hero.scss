@@ -9,7 +9,7 @@
   margin-right: auto;
 
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
 
   background-color: $sec-bg-color;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -17,15 +17,41 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
 }
 
 .hero__container {
-  padding: 200px 252px;
+  padding: 118px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 252px;
+  }
+}
+
+.hero__h1 {
+  display: block;
+  max-width: 360px;
+  margin: 0 auto;
+
+  font-size: 26px;
+  line-height: 1.62;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 100%;
+
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
   display: block;
   margin: 30px auto 0 auto;
 
-  padding: 10px 32px;
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+  }
 }
