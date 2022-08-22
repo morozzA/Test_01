@@ -24,7 +24,7 @@
 }
 
 .hero__container {
-  padding: 118px 0;
+  padding: 118px 15px;
 
   @media screen and (min-width: 1200px) {
     padding: 200px 252px;
@@ -40,7 +40,7 @@
   line-height: 1.62;
 
   @media screen and (min-width: 1200px) {
-    max-width: 100%;
+    max-width: none;
 
     font-size: 44px;
     line-height: 1.36;

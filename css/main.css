@@ -570,7 +570,7 @@ section {
 }
 
 .hero__container {
-  padding: 118px 0;
+  padding: 118px 15px;
 }
 @media screen and (min-width: 1200px) {
   .hero__container {
@@ -587,7 +587,7 @@ section {
 }
 @media screen and (min-width: 1200px) {
   .hero__h1 {
-    max-width: 100%;
+    max-width: none;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -666,7 +666,7 @@ section {
 .our-work {
   padding-top: 0;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .our-work {
     display: none;
   }
