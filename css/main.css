@@ -603,9 +603,18 @@ section {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+.features__container {
+  max-width: 480px;
+}
+@media screen and (min-width: 768px) {
   .features__container {
+    max-width: none;
     width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__container {
+    width: 1200px;
   }
 }
 
@@ -664,16 +673,18 @@ section {
 }
 
 .our-work {
+  display: none;
   padding-top: 0;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .our-work {
-    display: none;
+    display: block;
   }
 }
 
 .our-work__list {
   display: flex;
+  min-width: 1170px;
 }
 
 .our-work__item {

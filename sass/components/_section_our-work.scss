@@ -1,13 +1,16 @@
 .our-work {
+  display: none;
+
   padding-top: 0;
 
-  @media screen and (max-width: 1199px) {
-    display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
   }
 }
 
 .our-work__list {
   display: flex;
+  min-width: 1170px;
 }
 
 .our-work__item {
