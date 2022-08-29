@@ -128,7 +128,13 @@
           <ul class="our-work__list">
             <li class="our-work__item">
               <img
-                src="./images/img01.jpg"
+                srcset="
+                  ./images/our-work-1200-370-1@1x.jpg   370w,
+                  ./images/our-work-1200-740-1@2x.jpg   740w,
+                  ./images/our-work-1200-1110-1@3x.jpg 1110w
+                "
+                src="./images/our-work-1200-370-1@1x.jpg"
+                sizes="30vw"
                 alt="Десктопні додатки"
                 width="370"
                 height="294"
@@ -140,7 +146,13 @@
             </li>
             <li class="our-work__item">
               <img
-                src="./images/img02.jpg"
+                srcset="
+                  ./images/our-work-1200-370-2@1x.jpg   370w,
+                  ./images/our-work-1200-740-2@2x.jpg   740w,
+                  ./images/our-work-1200-1110-2@3x.jpg 1110w
+                "
+                src="./images/our-work-1200-370-2@1x.jpg"
+                sizes="30vw"
                 alt="Мобільні додатки"
                 width="370"
                 height="294"
@@ -152,7 +164,13 @@
             </li>
             <li class="our-work__item">
               <img
-                src="./images/img03.jpg"
+                srcset="
+                  ./images/our-work-1200-370-3@1x.jpg   370w,
+                  ./images/our-work-1200-740-3@2x.jpg   740w,
+                  ./images/our-work-1200-1110-3@3x.jpg 1110w
+                "
+                src="./images/our-work-1200-370-3@1x.jpg"
+                sizes="30vw"
                 alt="Дизайнерські рішення"
                 width="370"
                 height="294"
@@ -170,13 +188,38 @@
           <h2 class="h2">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="./images/teammate01.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/teammate01-1200-270@1x.jpg 270w,
+                    ./images/teammate01-1200-540@2x.jpg 540w,
+                    ./images/teammate01-1200-810@3x.jpg 810w
+                  "
+                  sizes="270px"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/teammate01-768-354@1x.jpg   354w,
+                    ./images/teammate01-768-708@2x.jpg   708w,
+                    ./images/teammate01-768-1062@3x.jpg 1062w
+                  "
+                  sizes="354px"
+                />
+                <img
+                  srcset="
+                    ./images/teammate01-480-450@1x.jpg   450w,
+                    ./images/teammate01-480-900@2x.jpg   900w,
+                    ./images/teammate01-480-1350@3x.jpg 1350w
+                  "
+                  src="./images/teammate01-480-450@1x.jpg"
+                  sizes="450px"
+                  alt="Ігор Дем'яненко"
+                  width="450"
+                  class="team__img"
+                />
+              </picture>
               <h3 class="h3 team__h3">Ігор Дем'яненко</h3>
               <p lang="en" class="team__post">Product Designer</p>
               <ul class="social-list team__social-list">
@@ -231,13 +274,38 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="./images/teammate02.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-                height="260"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/teammate02-1200-270@1x.jpg 270w,
+                    ./images/teammate02-1200-540@2x.jpg 540w,
+                    ./images/teammate02-1200-810@3x.jpg 810w
+                  "
+                  sizes="270px"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/teammate02-768-354@1x.jpg   354w,
+                    ./images/teammate02-768-708@2x.jpg   708w,
+                    ./images/teammate02-768-1062@3x.jpg 1062w
+                  "
+                  sizes="354px"
+                />
+                <img
+                  srcset="
+                    ./images/teammate02-480-450@1x.jpg   450w,
+                    ./images/teammate02-480-900@2x.jpg   900w,
+                    ./images/teammate02-480-1350@3x.jpg 1350w
+                  "
+                  src="./images/teammate02-480-450@1x.jpg"
+                  sizes="450px"
+                  alt="Ольга Рєпіна"
+                  width="450"
+                  class="team__img"
+                />
+              </picture>
               <h3 class="h3 team__h3">Ольга Рєпіна</h3>
               <p lang="en" class="team__post">Frontend Developer</p>
               <ul class="social-list team__social-list">
@@ -292,13 +360,38 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="./images/teammate03.jpg"
-                alt="Микола Тарасов"
-                width="270"
-                height="260"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/teammate03-1200-270@1x.jpg 270w,
+                    ./images/teammate03-1200-540@2x.jpg 540w,
+                    ./images/teammate03-1200-810@3x.jpg 810w
+                  "
+                  sizes="270px"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/teammate03-768-354@1x.jpg   354w,
+                    ./images/teammate03-768-708@2x.jpg   708w,
+                    ./images/teammate03-768-1062@3x.jpg 1062w
+                  "
+                  sizes="354px"
+                />
+                <img
+                  srcset="
+                    ./images/teammate03-480-450@1x.jpg   450w,
+                    ./images/teammate03-480-900@2x.jpg   900w,
+                    ./images/teammate03-480-1350@3x.jpg 1350w
+                  "
+                  src="./images/teammate03-480-450@1x.jpg"
+                  sizes="450px"
+                  alt="Микола Тарасов"
+                  width="450"
+                  class="team__img"
+                />
+              </picture>
               <h3 class="h3 team__h3">Микола Тарасов</h3>
               <p lang="en" class="team__post">Marketing</p>
               <ul class="social-list team__social-list">
@@ -353,13 +446,38 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="./images/teammate04.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                height="260"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/teammate04-1200-270@1x.jpg 270w,
+                    ./images/teammate04-1200-540@2x.jpg 540w,
+                    ./images/teammate04-1200-810@3x.jpg 810w
+                  "
+                  sizes="270px"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/teammate04-768-354@1x.jpg   354w,
+                    ./images/teammate04-768-708@2x.jpg   708w,
+                    ./images/teammate04-768-1062@3x.jpg 1062w
+                  "
+                  sizes="354px"
+                />
+                <img
+                  srcset="
+                    ./images/teammate04-480-450@1x.jpg   450w,
+                    ./images/teammate04-480-900@2x.jpg   900w,
+                    ./images/teammate04-480-1350@3x.jpg 1350w
+                  "
+                  src="./images/teammate04-480-450@1x.jpg"
+                  sizes="450px"
+                  alt="Михайло Єрмаков"
+                  width="450"
+                  class="team__img"
+                />
+              </picture>
               <h3 class="h3 team__h3">Михайло Єрмаков</h3>
               <p lang="en" class="team__post">UI Designer</p>
               <ul class="social-list team__social-list">
