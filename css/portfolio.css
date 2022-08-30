@@ -641,7 +641,9 @@ section {
 }
 
 .works-list__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .works-list__link:hover, .works-list__link:focus {
@@ -701,6 +703,7 @@ section {
 }
 
 .works-list__meta {
+  flex-grow: 1;
   min-width: 290px;
   max-width: 450px;
   padding: 20px 24px;

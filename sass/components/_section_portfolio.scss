@@ -85,7 +85,9 @@
 }
 
 .works-list__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   transition: box-shadow 250ms $cubic;
 
@@ -152,6 +154,8 @@
 }
 
 .works-list__meta {
+  flex-grow: 1;
+
   min-width: 290px;
   max-width: 450px;
   padding: 20px 24px;
