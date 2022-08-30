@@ -146,11 +146,15 @@
 
 .works-list__desc {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.56;
   letter-spacing: 0.03em;
 
   color: $bg-color;
+
+  @media screen and (min-width: 376px) {
+    font-size: 18px;
+  }
 }
 
 .works-list__meta {

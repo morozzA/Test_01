@@ -98,8 +98,8 @@
 .block-checkbox__checkbox-mod {
   position: relative;
 
-  width: 16px;
-  height: 15px;
+  min-width: 16px;
+  min-height: 15px;
 
   border: 2px solid $sec-text-color;
   border-radius: 2px;
@@ -141,9 +141,14 @@
   margin-left: 7px;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .block-checkbox__link {

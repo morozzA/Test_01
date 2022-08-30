@@ -16,12 +16,76 @@
   <body class="page">
     <header class="page-header">
       <div class="container page-header__container">
-        <div class="mobile-menu" data-menu></div>
+        <div class="mobile-menu" data-menu>
+          <ul class="mobile-menu__nav-list">
+            <li class="mobile-menu__nav-item">
+              <a href="./index.html" class="mobile-menu__nav-link mobile-menu__nav-link--active"
+                >Студія</a
+              >
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="./portfolio.html" class="mobile-menu__nav-link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="./contacts.html" class="mobile-menu__nav-link">Контакти</a>
+            </li>
+          </ul>
+          <div class="mobile-menu__contacts">
+            <ul class="mobile-menu__contact-list">
+              <li class="mobile-menu__contact-item">
+                <a href="tel:+380961111111" class="mobile-menu__contact-link">+38 096 111 11 11</a>
+              </li>
+              <li class="mobile-menu__contact-item">
+                <a href="mailto:info@devstudio.com" class="mobile-menu__contact-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu__social-list">
+              <li class="mobile-menu__social-item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="mobile-menu__social-link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-menu__social-item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="mobile-menu__social-link"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mobile-menu__social-item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="mobile-menu__social-link"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mobile-menu__social-item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="mobile-menu__social-link"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
         <a href="./index.html" lang="en" class="logo"
           ><span class="logo__prepend">Web</span>Studio</a
         >
-        <button type="button" class="mobile-menu__icon" data-menu-button>
-          <svg width="40" height="40">
+        <button type="button" class="mobile-menu__icon" aria-expanded="false" data-menu-button>
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
             <use href="./images/icons.svg#mm-open" class="mobile-menu__icon--open"></use>
             <use href="./images/icons.svg#mm-close" class="mobile-menu__icon--close"></use>
           </svg>
@@ -677,7 +741,7 @@
       </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="btn-close" data-modal-close>
           <svg width="11" height="11" class="btn-close__logo">
@@ -737,7 +801,7 @@
           <button type="submit" class="button contact-form__button">Відправити</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
